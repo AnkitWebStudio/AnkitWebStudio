@@ -476,6 +476,7 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
+  background-color: white;
   cursor: pointer;
   overflow: hidden;
    position: relative;
@@ -957,6 +958,15 @@ font-weight: 600;
 font-weight: 600;
   margin-left: -18px;
 
+}
+
+h4.realprice3{
+
+ margin-left: -18px;
+  font-size: 40px;
+  color: #0215c4;
+  margin-bottom: 4%;
+font-weight: 600;
 }
 
 
