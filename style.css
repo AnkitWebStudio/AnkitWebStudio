@@ -8,7 +8,6 @@
 
 
 
-
 html,
 body {
   height: 100%;
@@ -221,11 +220,30 @@ margin-left: 1px;
 
 
 
+/*scrooling ke liye animation*/
 
+.fade-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.9s ease;
+}
 
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*scrooling ke liye animation*/
 
+.fade-right {
+  opacity: 0;
+  transform: translateX(-170px); /* start from right */
+  transition: all 1.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
 
-
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 
@@ -535,7 +553,7 @@ background-color: rgb(118, 116, 255);
 
   width: 500px;
   height: 500px;
-  background-image: url(Assets/dashboard\ 1.svg);
+  background-image: url(Assets/mon.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -881,7 +899,7 @@ font-size: 14px;
 
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
-  font-weight: 390;
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -894,14 +912,14 @@ font-size: 14px;
   color: rgb(255, 255, 255);
   width: 84%;
 
-  background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(252, 148, 61, 1) 62%);
+ background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(252, 148, 61, 1) 62%);
   ;
   padding-top: 8px;
   padding-bottom: 8px;
 
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
-  font-weight: 350;
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -915,9 +933,9 @@ font-size: 14px;
 }
 
 .planprice {
-  color: #000;
+  color: #000000c5;
   text-decoration: line-through;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: -9px;
 
 }
@@ -1321,7 +1339,7 @@ button:hover {
 
 /* responsive */
 
-@media(max-width:768px) {
+@media(max-width:1000px) {
 
   .contact-box {
     width: 100%;
@@ -1671,6 +1689,28 @@ font-weight: 350;
 
 @media (max-width:1000px) {
 
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 html,
@@ -1886,14 +1926,17 @@ font-size: medium;
   .firstbox {
 
     width: 100%;
-
-
+background: linear-gradient(90deg, rgba(56, 44, 184, 1) 0%, rgb(22, 46, 202) 100%);
+ 
 
 
   }
 
 
+.wave-box{
 
+  background: linear-gradient(90deg, rgba(56, 44, 184, 1) 0%, rgb(22, 46, 202) 100%);
+}
 
 
 
@@ -2242,6 +2285,14 @@ gap: 35%;
 
   }
 
+.call-btn {
+
+
+  width: 95%;
+}
+
+
+
 
   .pricingbox3 {
     display: flex;
@@ -2251,20 +2302,32 @@ gap: 35%;
     border: none;
     margin-top: 10px;
     background: #d93016;
-    background: linear-gradient(90deg, rgb(122, 4, 133) 0%, rgba(111, 127, 232, 1) 100%);
+    background: linear-gradient(90deg, rgb(228, 58, 58) 0%, rgb(151, 26, 26) 100%);
     color: #ffffff;
     border-radius: 15px;
   }
 
+
+
+
+
+
+
 h4.realprice{
 
- color: #ff8521;
+ color: #ffffff;
 }
 
 
 
 
-  
+.namesofpackbox3{
+
+background: linear-gradient(90deg, rgb(240, 108, 0) 0%, rgb(240, 108, 0) 62%);
+
+
+
+  }
 
 
 
