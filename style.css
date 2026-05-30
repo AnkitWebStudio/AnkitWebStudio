@@ -933,7 +933,7 @@ font-size: 14px;
 }
 
 .planprice {
-  color: #000000c5;
+  color: #0000009a;
   text-decoration: line-through;
   font-size: 25px;
   margin-bottom: -9px;
@@ -2278,9 +2278,9 @@ gap: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 89%;
     border: 1px solid rgb(38, 85, 214);
-    border-radius: 15px;
+    border-radius: 8px;
     margin-top: 10px;
 
   }
@@ -2290,7 +2290,7 @@ gap: 35%;
 
   width: 95%;
 }
-
+ 
 
 
 
@@ -2298,13 +2298,13 @@ gap: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 89%;
     border: none;
     margin-top: 10px;
     background: #d93016;
     background: linear-gradient(90deg, rgb(228, 58, 58) 0%, rgb(151, 26, 26) 100%);
     color: #ffffff;
-    border-radius: 15px;
+    border-radius: 8px;
   }
 
 
@@ -2313,9 +2313,11 @@ gap: 35%;
 
 
 
-h4.realprice{
+h4.realprice3{
 
- color: #ffffff;
+  font-size: 35px;
+  
+  margin-bottom: 4%;
 }
 
 
@@ -2324,8 +2326,18 @@ h4.realprice{
 .namesofpackbox3{
 
 background: linear-gradient(90deg, rgb(240, 108, 0) 0%, rgb(240, 108, 0) 62%);
+width: 32%;
+padding-top: 0px;
+  padding-bottom: 0px;
 
+  }
 
+  .namesofpackbox {
+
+   margin-top: 5%;
+    width: 50%;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
   }
 
