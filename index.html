@@ -10,40 +10,40 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
+  
 </head>
 
 <body>
   <div class="sidebar" id="sidebar">
-    <div  class="logo-c">
-    <img src="Assets/final3.svg" alt="Google Logo" class="Menulogo">
+    <div class="logo-c">
+      <img src="Assets/final3.svg" alt="Google Logo" class="Menulogo">
 
 
-     <div class="backo"><div class="back" onclick="backsidebar()"></div>
-    
-    
-    
-    </div>
+      <div class="backo">
+        <div class="back" onclick="backsidebar()"></div>
+
+
+
       </div>
+    </div>
     <nav class="Menu">
       <ul class="Menuinner">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#contact">Technical Support</a></li>
+        <li><a href="#Home" onclick="backsidebar()">Home</a></li>
+        <li><a href="#about"onclick="backsidebar()">About Us</a></li>
+        <li><a href="#services"onclick="backsidebar()">Services</a></li>
+        <li><a href="#contact"onclick="backsidebar()">Contact Us</a></li>
+        <li><a href="#contact"onclick="backsidebar()">Technical Support</a></li>
       </ul>
-      </nav>
-      
-      <div class="callmenu">
-        <h5 class="callm">Call:8360586043</h5>
-      </div>
+    </nav>
+
+    <div class="callmenu"  onclick="window.location.href='tel:+918360586043'">
+      <h5 class="callm">Call:8360586043</h5>
+    </div>
 
   </div>
-<div class="overlay1" id="overlay1"></div>
+  <div class="overlay1" id="overlay1"></div>
 
-  
+
 
 
   <header class="firstbox" id="Home">
@@ -67,7 +67,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li><a href="#contact">Technical Support</a></li>
-          <div class="call">
+          <div class="call" onclick="window.location.href='tel:+918360586043'">
             <h5>Call:8360586043</h5>
           </div>
 
@@ -84,7 +84,7 @@
         <h2>Modern, Fast, And Responsive</h2>
         <h3>Designed To Help Your Business Grow Online.</h3>
       </div>
-      <div class="innerbox2">
+      <div class="innerbox2" data-aos="flip-left" data-aos-delay="300">
 
         <a href="https://google.com" target="_blank">
           <img src="Assets/coding.png" alt="Google Logo" class="sticker">
@@ -129,18 +129,18 @@
   <div class="outerlayer" id="services">
 
 
-    <div class="innerlayer1">
+    <div class="innerlayer1  fade-up">
 
       <div class="overlay">
         <p>Our Web Design Consultancy service helps businesses create modern, user-focused, and high-performing
           websites that build a strong online presence. We provide expert guidance on website structure, UI/UX design,
           branding, responsiveness, and performance optimization to ensure your website not only looks professional but
           also delivers real business results and a better user experience.
-        <p>
+        </p>
       </div>
 
     </div>
-    <div class="innerlayer1">
+    <div class="innerlayer1 fade-up">
       <div class="overlay">
         <p>Our Custom E-commerce WordPress Website services are designed to help businesses build powerful, modern, and
           user-friendly online stores. We create fully responsive WooCommerce websites with custom UI/UX design, secure
@@ -148,7 +148,7 @@
           and help your business grow online successfully</p>
       </div>
     </div>
-    <div class="innerlayer1">
+    <div class="innerlayer1 fade-up">
       <div class="overlay">
         <p>Our Website Maintenance & Support services ensure your WordPress website stays secure, updated, and running
           smoothly at all times. We provide regular updates, performance monitoring, security checks, bug fixes,
@@ -160,7 +160,7 @@
 
   </div>
 
-  <div class="secondpartouterlayer">
+  <div class="secondpartouterlayer fade-right">
 
     <div class="secondpartinnerlayer1">
 
@@ -184,7 +184,7 @@
 
   </div>
 
-  <div class="thirdsectionouter">
+  <div class="thirdsectionouter fade-up">
 
     <h1>Your Trusted Partner for Modern Web Solutions</h1>
     <p>AnkitWebStudio, trust is built through quality work, clear communication, and reliable support. We focus on
@@ -193,9 +193,9 @@
       clients.</p>
   </div>
 
-  <div class="thirdseclogoouter1">
+  <div class="thirdseclogoouter1 fade-up">
 
-    <div class="thirdseclogoinner1">
+    <div class="thirdseclogoinner1 fade-up">
 
       <div class="overlay2">
         <p>Our Quick Setup service helps businesses launch their WordPress website quickly and efficiently without
@@ -223,7 +223,7 @@
           professionalism, and long-term support. We are committed to delivering modern websites with clean design,
           responsive layouts, secure development, and attention to detail to ensure every project helps our clients
           build a strong and trustworthy online presence.
-        <p>
+        </p>
       </div>
 
     </div>
@@ -231,7 +231,7 @@
 
   </div>
 
-  <div class="thirdseclogoouter2">
+  <div class="thirdseclogoouter2 fade-u">
 
     <div class="thirdseclogoinner2">
       <div class="overlay2">
@@ -239,7 +239,7 @@
           website to improve growth, engagement, and conversions. From email marketing platforms and analytics tools to
           social media integrations and lead generation systems, we ensure your website is equipped with the right
           marketing solutions to support better business performance and online success.
-        <p>
+        </p>
       </div>
 
     </div>
@@ -249,7 +249,7 @@
           smartphones, tablets, laptops, and desktops. We create fully responsive layouts with optimized performance,
           smooth navigation, and user-friendly interfaces to deliver a seamless browsing experience for every visitor on
           any screen size.
-        <p>
+        </p>
       </div>
 
     </div>
@@ -259,7 +259,7 @@
           and unique requirements. From custom layouts and design elements to advanced features and functionality, we
           provide flexible solutions that help your website stand out with a professional and personalized online
           experience.
-        <p>
+        </p>
       </div>
 
 
@@ -267,7 +267,7 @@
     </div>
 
   </div>
-  <div class="fourthsectionouter">
+  <div class="fourthsectionouter fade-up">
 
     <h1>Flexible WordPress Plans Designed for Every Business</h1>
     <p>Choose the perfect WordPress plan designed to match your business goals and budget. Whether you need a simple
@@ -276,9 +276,9 @@
       help your brand build a strong online presence.</p>
   </div>
 
-  <div class="pricing">
+  <div class="pricing  "> 
 
-    <div class="pricingbox1">
+    <div class="pricingbox1 fade-up">
       <div class="namesofpackbox">
         <p>Essential Plan</p>
       </div>
@@ -323,9 +323,9 @@
 
       </ul>
 
-      <button class="call-btn">Call Now</button>
+      <button class="call-btn" onclick="window.location.href='tel:+918360586043'">Call Now</button>
     </div>
-    <div class="pricingbox1">
+    <div class="pricingbox1 fade-up">
       <div class="namesofpackbox">
         <p>Professional</p>
       </div>
@@ -369,12 +369,12 @@
         <li>Technical Support Included</li>
         <li>Fast Delivery</li>
       </ul>
-      <button class="call-btn">Call Now</button>
+      <button class="call-btn" onclick="window.location.href='tel:+918360586043'">Call Now</button>
     </div>
 
 
 
-    <div class="pricingbox3">
+    <div class="pricingbox3 fade-up">
       <div class="namesofpackbox3">
         <p>Elite Plan</p>
       </div>
@@ -418,24 +418,24 @@
         <li>Spam & Malware Protection</li>
         <li>Priority Technical Support</li>
       </ul>
-      <button class="call-btn">Call Now</button>
+      <button class="call-btn" onclick="window.location.href='tel:+918360586043'">Call Now</button>
     </div>
 
   </div>
 
 
 
-  <div class="why-choose-us">
+  <div class="why-choose-us fade-up">
 
     <h1>Why Choose AnkitWebStudio</h1>
-    <p>We create modern WordPress websites focused on performance, user experience, and business growth. At
+    <p>We create modern WordPress websites focused on perfwormance, user experience, and business growth. At
       AnkitWebStudio, every project is built with clean design, responsive layouts, fast loading speed, and attention to
       detail to help your brand stand out online. Our goal is to deliver reliable, high-quality web solutions that build
       trust and drive real results for your business..</p>
   </div>
 
 
-  <div class="whyouter">
+  <div class="whyouter fade-right">
 
     <div class="whyinner">
 
@@ -532,40 +532,30 @@
 
   <section class="contact-section" id="contact">
 
-    <div class="contact-box">
+    <div class="contact-box fade-up">
 
       <h1>Submit Your Query</h1>
       <p>We will be glad to help you</p>
 
-      <form>
+      <form action="https://formspree.io/f/mzdwwrpe" method="POST">
 
-        <div class="input-row">
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Your E-mail">
-        </div>
+  <div class="input-row">
+    <input type="text" name="name" placeholder="Your Name" required>
 
-        <div class="input-row">
-          <input type="text" placeholder="Phone">
-          <input type="text" placeholder="Subject">
-        </div>
+    <input type="email" name="email" placeholder="Your E-mail" required>
+  </div>
 
-        <textarea placeholder="Message"></textarea>
+  <div class="input-row">
+    <input type="text" name="phone" placeholder="Phone" required>
 
-        <div class="captcha-box">
-          <div class="captcha-left">
-            <div class="checkbox"></div>
-            <span>I'm not a robot</span>
-          </div>
+    <input type="text" name="subject" placeholder="Subject" required>
+  </div>
 
-          <div class="captcha-right">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/RecaptchaLogo.svg" alt="">
-            <small>reCAPTCHA</small>
-          </div>
-        </div>
+  <textarea name="message" placeholder="Message" required></textarea>
 
-        <button type="submit">SEND YOUR MESSAGE</button>
+  <button type="submit">SEND YOUR MESSAGE</button>
 
-      </form>
+</form>
 
       <div class="contact-info">
         <span>📞 +91 8360586043</span>
@@ -648,10 +638,10 @@
 
         </h2>
 
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="#Home">Home</a>
+        <a href="#services">Services</a>
+      
+        <a href="#contact">Contact</a>
 
       </div>
 
@@ -662,7 +652,7 @@
           Services
         </h2>
 
-        <a href="#">Website Design</a>
+        <a href="#services">Website Design</a>
         <a href="#">UI/UX Design</a>
         <a href="#">E-Commerce</a>
         <a href="#">Landing Pages</a>
@@ -692,6 +682,9 @@
 
 
   <script src="script.js"></script>
+
+ 
+
 </body>
 
 </html>
