@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ankit-web-studio.vercel.app/sitemap.xml
+Sitemap: https://ankitwebstudio.com/sitemap.xml
