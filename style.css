@@ -43,6 +43,71 @@ font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
 
+
+
+
+
+/* stars layer */
+.firstbox::before,
+.firstbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-repeat: repeat;
+
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(1px 1px at 80px 120px, white, transparent),
+    radial-gradient(2px 2px at 150px 200px, white, transparent),
+    radial-gradient(1px 1px at 300px 400px, white, transparent),
+    radial-gradient(2px 2px at 500px 100px, white, transparent);
+
+  animation: moveStars 60s linear infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.firstbox::after {
+  transform: scale(1.5);
+  opacity: 0.5;
+  animation-duration: 120s;
+}
+
+/* content stays above stars */
+.firstbox > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-500px, -1000px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .headerarea {
   display: flex;
   align-items: center;
@@ -865,7 +930,7 @@ font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 28%;
+  width: 30%;
   border: 1px solid rgb(38, 85, 214);
   margin-top: 10px;
   border-radius: 10px;
