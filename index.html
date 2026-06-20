@@ -1,702 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AnkitWebStudio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <title>AnkitWebStudio | WordPress Web Design & Development</title>
+  <meta name="description" content="AnkitWebStudio builds high-converting, premium WordPress websites starting from ₹9,999. Get a fast, secure, and SEO-optimized website for your business today.">
+  <meta name="keywords" content="WordPress Web Design, Web Development, Custom Websites, E-commerce, WooCommerce, Website Redesign, Noida Web Designer, AnkitWebStudio">
+  <meta name="author" content="AnkitWebStudio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.ankitwebstudio.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ankitwebstudio.com/">
+  <meta property="og:title" content="AnkitWebStudio | WordPress Web Design & Development">
+  <meta property="og:description" content="AnkitWebStudio builds high-converting, premium WordPress websites starting from ₹9,999. Get a fast, secure, and SEO-optimized website for your business today.">
+  <meta property="og:image" content="https://www.ankitwebstudio.com/Assets/final3 1.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.ankitwebstudio.com/">
+  <meta property="twitter:title" content="AnkitWebStudio | WordPress Web Design & Development">
+  <meta property="twitter:description" content="AnkitWebStudio builds high-converting, premium WordPress websites starting from ₹9,999. Get a fast, secure, and SEO-optimized website for your business today.">
+  <meta property="twitter:image" content="https://www.ankitwebstudio.com/asset/">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",        
+    "name": "AnkitWebStudio",
+    "image": "https://www.ankitwebstudio.com/Assets/final3 1.png",
+    "description": "AnkitWebStudio builds high-converting, premium WordPress websites starting from ₹9,999.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Firozpur Cantt",
+      "addressLocality": "Firozpur Cantt",
+      "addressRegion": "Punjab",
+      "postalCode": "152001",
+      "addressCountry": "IN"
+    },
+    "telephone": "+918360586043",
+    "url": "https://www.ankitwebstudio.com",
+    "priceRange": "₹9,999 - ₹25,000",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <meta name="google-site-verification" content="6NhPBEo8M8n8w_3E_-TmHUxzDUmLz74qanyZnxOL5Xg" />
-
-
-
-
-
-<title>WooCommerce Website Developer in India | Ankit Web Studio</title>
-
-    <meta name="description"
-          content="Ankit Web Studio helps businesses build modern WooCommerce stores and professional websites. Fast, responsive, and SEO-friendly web solutions.">
-
-    <meta name="keywords"
-          content="WooCommerce Developer, WordPress Developer, Website Designer India, E-commerce Website, Web Developer Punjab, Ankit Web Studio">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical"
-          href="https://ankit-web-studio.vercel.app/">
-
-    <!-- Open Graph -->
-    <meta property="og:title"
-          content="Ankit Web Studio | WooCommerce Website Developer">
-
-    <meta property="og:description"
-          content="Modern websites and WooCommerce stores designed to grow your business.">
-
-    <meta property="og:url"
-          content="https://ankit-web-studio.vercel.app/">
-
-    <meta property="og:type"
-          content="website">
-
-    <meta property="og:image"
-          content="https://ankit-web-studio.vercel.app/assets/images/preview.webp">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <meta name="twitter:title"
-          content="Ankit Web Studio | WooCommerce Website Developer">
-
-    <meta name="twitter:description"
-          content="Professional WooCommerce and website development services.">
-
-    <meta name="twitter:image"
-          content="https://ankit-web-studio.vercel.app/assets/images/preview.webp">
-
-
- <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ankit Sunar",
-      "jobTitle": "Web Developer",
-      "url": "https://ankit-web-studio.vercel.app/",
-      "knowsAbout": [
-        "WooCommerce",
-        "WordPress",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "UI/UX Design"
-      ]
-    }
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="sidebar" id="sidebar">
-    <div class="logo-c">
-      <img src="Assets/final3.svg" alt="Google Logo" class="Menulogo">
-
-
-      <div class="backo">
-        <div class="back" onclick="backsidebar()"></div>
-
-
-
-      </div>
-    </div>
-    <nav class="Menu">
-      <ul class="Menuinner">
-        <li><a href="#Home" onclick="backsidebar()">Home</a></li>
-        <li><a href="#about"onclick="backsidebar()">About Us</a></li>
-        <li><a href="#services"onclick="backsidebar()">Services</a></li>
-        <li><a href="#contact"onclick="backsidebar()">Contact Us</a></li>
-        <li><a href="#contact"onclick="backsidebar()">Technical Support</a></li>
-      </ul>
-    </nav>
-
-    <div class="callmenu"  onclick="window.location.href='tel:+918360586043'">
-      <h5 class="callm">Call:8360586043</h5>
-    </div>
-
-  </div>
-  <div class="overlay1" id="overlay1"></div>
-
-
-
-
-  <header class="firstbox" id="Home">
-    <div class="headerarea">
-      <a href="https://google.com" target="_blank">
-        <img src="Assets/final3.svg" alt="Google Logo" class="logo">
+  <main class="page-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="AnkitWebStudio home">
+        <img src="Assets/final3 1.png" alt="AnkitWebStudio">
       </a>
 
-      <div class="hamburger" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main menu">
+        <a href="#home">Home</a>
+        <a href="#process">How It Works</a>
+        <a href="services.html">Services</a>
+        <a href="services.html#pricing">Pricing</a>
+        <a href="#review">Free Review</a>
+      </nav>
+
+      <a class="header-cta" href="tel:+918360586043">Book a Call</a>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="slider-panel" aria-label="Website design preview">
+        <div class="slider-frame">
+          <img class="slide-image active" src="Assets/heroimg.png" alt="Fashion ecommerce website preview across laptop, desktop, phone, and tablet">
+        </div>
+        <div class="slider-dots" role="tablist" aria-label="Preview slides">
+          <button class="dot is-active" type="button" aria-label="Show slide 1"></button>
+          <button class="dot" type="button" aria-label="Show slide 2"></button>
+          <button class="dot" type="button" aria-label="Show slide 3"></button>
+        </div>
       </div>
 
-
-      <nav>
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#contact">Technical Support</a></li>
-          <div class="call" onclick="window.location.href='tel:+918360586043'">
-            <h5>Call:8360586043</h5>
-          </div>
-
-
-    </div>
-    </ul>
-
-    </nav>
-
-    </div>
-    <div class="outerbox">
-      <div class="innerbox1">
-        <h1>Welcome To Our Website</h1>
-        <h2>Modern, Fast, And Responsive</h2>
-        <h3>Designed To Help Your Business Grow Online.</h3>
-      </div>
-      <div class="innerbox2" data-aos="flip-left" data-aos-delay="300">
-
-        <a href="https://google.com" target="_blank">
-          <img src="Assets/coding.png" alt="Google Logo" class="sticker">
-        </a>
-
-
-      </div>
-    </div>
-
-
-
-
-
-
-  </header>
-  <div class="wave-box">
-
-    <!-- Bottom wave now on top -->
-    <svg class="wave wave2" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="rgba(255,255,255,0.2)"
-        d="M0,160L80,150C160,140,320,120,480,90C640,60,800,40,960,70C1120,100,1280,180,1440,160L1440,0L0,0Z">
-      </path>
-    </svg>
-
-    <!-- Top wave now below -->
-    <svg class="wave wave1" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="rgba(255,255,255,0.35)"
-        d="M0,96L60,122C120,148,240,202,360,202C480,202,600,148,720,122C840,96,960,96,1080,122C1200,148,1320,202,1440,192L1440,0L0,0Z">
-      </path>
-    </svg>
-
-  </div>
-
-
-
-
-
-
-
-
-
-  <div class="outerlayer" id="services">
-
-
-    <div class="innerlayer1  fade-up">
-
-      <div class="overlay">
-        <p>Our Web Design Consultancy service helps businesses create modern, user-focused, and high-performing
-          websites that build a strong online presence. We provide expert guidance on website structure, UI/UX design,
-          branding, responsiveness, and performance optimization to ensure your website not only looks professional but
-          also delivers real business results and a better user experience.
+      <div class="hero-copy">
+        <p class="eyebrow">We Design &amp; Develop</p>
+        <h1>
+          <span class="title-line">High-Converting</span>
+          <span class="title-line title-service">
+            <span class="accent-word">WordPress</span>
+            <span>Websites</span>
+          </span>
+        </h1>
+        <p class="subtitle">
+          We will build your website, grow your socials, and streamline your
+          brand, so you can focus on your customer.
+          <strong>,Starting from 9,999₹</strong>
         </p>
+        <p class="price-line">Starting from 9,999&#8377;</p>
+
+        <div class="hero-actions">
+          <a class="primary-btn" href="services.html#pricing">
+            <span>Get started</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h12"></path>
+              <path d="m13 6 6 6-6 6"></path>
+            </svg>
+          </a>
+          <a class="secondary-btn" href="contact.html">
+            <span>Contact us</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+              <path d="M8 10h.01"></path>
+              <path d="M12 10h.01"></path>
+              <path d="M16 10h.01"></path>
+            </svg>
+          </a>
+        </div>
+
+        <ul class="trust-list" aria-label="Website benefits">
+          <li>
+            <span class="trust-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M6 12 16 8l10 4v7c0 6-4 9-10 11-6-2-10-5-10-11z"></path>
+                <path d="M11 17h10v7H11z"></path>
+                <path d="M13 17v-2a3 3 0 0 1 6 0v2"></path>
+              </svg>
+            </span>
+            <span>100%</span>
+            <b>Secure</b>
+          </li>
+          <li>
+            <span class="trust-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="m7 21 9 5 9-5"></path>
+                <path d="m7 16 9 5 9-5"></path>
+                <path d="m7 11 9 5 9-5-9-5z"></path>
+                <path d="M22 6c3 0 5 1 5 3s-2 3-5 3-5-1-5-3 2-3 5-3z"></path>
+              </svg>
+            </span>
+            <span>100%</span>
+            <b>Affordable</b>
+          </li>
+          <li>
+            <span class="trust-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="m5 22 8-4 5 3 9-6"></path>
+                <path d="M12 10h8"></path>
+                <path d="M16 6v8"></path>
+                <path d="M6 26c7 2 13 2 20 0"></path>
+              </svg>
+            </span>
+            <span>100%</span>
+            <b>Trusted</b>
+          </li>
+          <li>
+            <span class="trust-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M5 10h22v16H5z"></path>
+                <path d="M5 15h22"></path>
+                <path d="M9 6v4"></path>
+                <path d="M23 6v4"></path>
+                <path d="m11 22 3-4 3 3 2-2 3 3"></path>
+              </svg>
+            </span>
+            <span>100%</span>
+            <b>Fast Loading</b>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mobile-choice" aria-labelledby="choice-title">
+      <h2 id="choice-title">Why Choose <span>AnkitWebStudio?</span></h2>
+      <p>We don't just build websites, we build digital experiences that drive results.</p>
+    </section>
+
+    <!-- FREE WEBSITE REVIEW SECTION -->
+    <section class="review-section" id="review" aria-labelledby="review-title">
+
+      <!-- Floating mock UI cards -->
+      <div class="review-mockup review-mockup--left" aria-hidden="true">
+        <div class="mock-browser">
+          <div class="mock-browser__dots">
+            <span class="mock-dot mock-dot--red"></span>
+            <span class="mock-dot mock-dot--yellow"></span>
+            <span class="mock-dot mock-dot--green"></span>
+          </div>
+          <div class="mock-browser__body">
+            <div class="mock-thumb mock-thumb--wide"></div>
+            <div class="mock-thumb mock-thumb--sq"></div>
+          </div>
+        </div>
+        <div class="mock-link-btn" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+          </svg>
+        </div>
+        <div class="mock-arrow mock-arrow--right" aria-hidden="true">- - - - →</div>
       </div>
 
-    </div>
-    <div class="innerlayer1 fade-up">
-      <div class="overlay">
-        <p>Our Custom E-commerce WordPress Website services are designed to help businesses build powerful, modern, and
-          user-friendly online stores. We create fully responsive WooCommerce websites with custom UI/UX design, secure
-          payment integration, fast performance, and conversion-focused layouts to deliver a smooth shopping experience
-          and help your business grow online successfully</p>
+      <div class="review-mockup review-mockup--right" aria-hidden="true">
+        <div class="mock-score-card">
+          <div class="mock-score-card__header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="mock-score-icon"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            <span>Website<br>Review</span>
+          </div>
+          <div class="mock-score-card__checks">
+            <span class="mock-check">✓ <span class="mock-bar"></span></span>
+            <span class="mock-check">✓ <span class="mock-bar mock-bar--sm"></span></span>
+            <span class="mock-check">✓ <span class="mock-bar mock-bar--md"></span></span>
+          </div>
+          <div class="mock-score-ring">
+            <svg viewBox="0 0 80 80" class="mock-ring-svg">
+              <circle cx="40" cy="40" r="32" fill="none" stroke="rgba(139,92,246,.18)" stroke-width="7"/>
+              <circle cx="40" cy="40" r="32" fill="none" stroke="#8B5CF6" stroke-width="7"
+                stroke-dasharray="201" stroke-dashoffset="36" stroke-linecap="round"
+                transform="rotate(-90 40 40)"/>
+            </svg>
+            <div class="mock-ring-label"><span class="mock-ring-num">92</span><small>Score</small></div>
+          </div>
+        </div>
+        <div class="mock-arrow mock-arrow--left" aria-hidden="true">← - - - -</div>
       </div>
-    </div>
-    <div class="innerlayer1 fade-up">
-      <div class="overlay">
-        <p>Our Website Maintenance & Support services ensure your WordPress website stays secure, updated, and running
-          smoothly at all times. We provide regular updates, performance monitoring, security checks, bug fixes,
-          backups, and technical support to keep your website optimized, reliable, and ready to deliver the best
-          experience for your visitors and customers.</p>
+
+      <!-- Badge -->
+      <div class="review-badge" aria-label="Free Website Review">
+        <span class="review-badge__dot"></span>
+        FREE WEBSITE REVIEW
       </div>
-    </div>
 
+      <!-- Heading -->
+      <h2 class="review-heading" id="review-title">
+        Get Your Website Reviewed<br>
+        for <span class="review-accent">Better Results</span>
+      </h2>
 
-  </div>
-
-  <div class="secondpartouterlayer fade-right">
-
-    <div class="secondpartinnerlayer1">
-
-
-
-
-    </div>
-    <div class="secondpartinnerlayer2" id="about">
-      <h2>Know About Us</h2>
-      <h1>We Specialize In WordPress Websites That Not only Look Great But Also Help Your
-        Business Scale, Attract Customers, And Increase Revenue.</h1>
-      <p id="">AnkitWebStudio provides modern WordPress website development services focused on helping businesses grow
-        online. We design fast, responsive, and user-friendly websites that not only look professional but also improve
-        your brand presence, attract more customers, and increase conversions. Our goal is to turn your ideas into
-        powerful digital experiences that support long-term business success.
-
+      <p class="review-subheading">
+        Share your website link and our experts will review it to help<br class="review-br">
+        you improve design, performance &amp; conversions.
       </p>
 
-    </div>
+      <!-- Input card -->
+      <div class="review-card">
+        <div class="review-card__top">
+          <svg class="review-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <p class="review-card__title">Paste your website link below</p>
+          <p class="review-card__desc">Our team will analyze and get back to you with actionable suggestions.</p>
+        </div>
 
+        <form class="review-form" id="review-form" onsubmit="handleReviewSubmit(event)">
+          <div class="review-input-wrap">
+            <svg class="review-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <input
+              id="review-url-input"
+              class="review-input"
+              type="url"
+              placeholder="https://www.yourwebsite.com"
+              aria-label="Your website URL"
+              required
+            >
+            <button class="review-submit-btn" type="submit" id="review-submit-btn">
+              Submit for Review
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+              </svg>
+            </button>
+          </div>
+        </form>
 
-  </div>
-
-  <div class="thirdsectionouter fade-up">
-
-    <h1>Your Trusted Partner for Modern Web Solutions</h1>
-    <p>AnkitWebStudio, trust is built through quality work, clear communication, and reliable support. We focus on
-      creating modern WordPress websites that are fast, responsive, and designed to help businesses grow online. Every
-      project is developed with attention to detail, performance, and user experience to ensure long-term value for our
-      clients.</p>
-  </div>
-
-  <div class="thirdseclogoouter1 fade-up">
-
-    <div class="thirdseclogoinner1 fade-up">
-
-      <div class="overlay2">
-        <p>Our Quick Setup service helps businesses launch their WordPress website quickly and efficiently without
-          compromising quality. From WordPress installation and theme setup to essential plugins, responsive layouts,
-          and basic optimization, we ensure your website is professionally configured and ready to go online in the
-          shortest possible time.
-        <p>
-      </div>
-
-    </div>
-
-    <div class="thirdseclogoinner1">
-      <div class="overlay2">
-        <p>Our SEO-Friendly Website Development services are focused on creating WordPress websites that are optimized
-          for better search engine visibility and long-term online growth. We build clean website structures,
-          fast-loading pages, mobile-responsive layouts, and SEO-optimized content foundations that help improve
-          rankings, attract more visitors, and increase your business presence online.
-        <p>
-      </div>
-
-    </div>
-    <div class="thirdseclogoinner1">
-      <div class="overlay2">
-        <p>Businesses can trust AnkitWebStudio for reliable, high-quality WordPress solutions focused on performance,
-          professionalism, and long-term support. We are committed to delivering modern websites with clean design,
-          responsive layouts, secure development, and attention to detail to ensure every project helps our clients
-          build a strong and trustworthy online presence.
+        <p class="review-privacy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          We respect your privacy. Your link is safe with us.
         </p>
       </div>
 
-    </div>
-
-
-  </div>
-
-  <div class="thirdseclogoouter2 fade-u">
-
-    <div class="thirdseclogoinner2">
-      <div class="overlay2">
-        <p>Our Marketing Tools Integration services help businesses connect powerful digital tools with their WordPress
-          website to improve growth, engagement, and conversions. From email marketing platforms and analytics tools to
-          social media integrations and lead generation systems, we ensure your website is equipped with the right
-          marketing solutions to support better business performance and online success.
-        </p>
+      <!-- Feature pills -->
+      <div class="review-features" role="list">
+        <div class="review-feature" role="listitem">
+          <span class="review-feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Expert Analysis</strong>
+            <p>Detailed review by industry experts</p>
+          </div>
+        </div>
+        <div class="review-feature" role="listitem">
+          <span class="review-feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Actionable Tips</strong>
+            <p>Get practical suggestions to improve your site</p>
+          </div>
+        </div>
+        <div class="review-feature" role="listitem">
+          <span class="review-feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Performance Check</strong>
+            <p>We analyze speed, SEO &amp; user experience</p>
+          </div>
+        </div>
+        <div class="review-feature" role="listitem">
+          <span class="review-feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Conversion Focused</strong>
+            <p>Improve visitors into customers</p>
+          </div>
+        </div>
       </div>
 
-    </div>
-    <div class="thirdseclogoinner2">
-      <div class="overlay">
-        <p>Our Mobile Compatibility services ensure your WordPress website works perfectly across all devices, including
-          smartphones, tablets, laptops, and desktops. We create fully responsive layouts with optimized performance,
-          smooth navigation, and user-friendly interfaces to deliver a seamless browsing experience for every visitor on
-          any screen size.
-        </p>
+    </section>
+
+    <!-- HOW IT WORKS (PROCESS) SECTION -->
+    <section class="process-section" id="process" aria-labelledby="process-title">
+      <div class="process-header">
+        <span class="process-eyebrow">SIMPLE 3-STEP PROCESS</span>
+        <h2 class="process-title" id="process-title">How We Build Your Website</h2>
+        <p class="process-subtitle">A streamlined, stress-free workflow designed to take your website from an idea to a high-performing launch.</p>
       </div>
 
-    </div>
-    <div class="thirdseclogoinner2">
-      <div class="overlay">
-        <p>Our Customization services are focused on creating WordPress websites tailored to your brand, business goals,
-          and unique requirements. From custom layouts and design elements to advanced features and functionality, we
-          provide flexible solutions that help your website stand out with a professional and personalized online
-          experience.
-        </p>
+      <div class="process-grid">
+        <!-- Step 1 -->
+        <div class="process-card">
+          <div class="process-number">01</div>
+          <div class="process-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3>1. Strategy &amp; Blueprint</h3>
+          <p>We jump on a brief call to align on your business goals, target audience, and design preferences to map out the perfect layout.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-card">
+          <div class="process-number">02</div>
+          <div class="process-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+            </svg>
+          </div>
+          <h3>2. Design &amp; Development</h3>
+          <p>I build your custom WordPress site focusing on blazing-fast speed, modern user experience, and search engine optimization (SEO).</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-card">
+          <div class="process-number">03</div>
+          <div class="process-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>3. Launch &amp; Handover</h3>
+          <p>Your website goes live! I configure your domain, set up security protocols, and hand over a simple video guide on how to edit text yourself.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATE US SECTION -->
+    <section id="locate-us" class="locate-section" aria-labelledby="locate-title">
+      <div class="locate-inner">
+        <div class="locate-content">
+          <div class="locate-eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            LOCATE US
+          </div>
+          <h2 class="locate-title" id="locate-title">We Are Here,<br>Let's <span class="accent-word">Meet Up!</span></h2>
+          <p class="locate-sub">Visit our office or connect with us online. We'd love to hear from you.</p>
+
+          <div class="locate-cards">
+            <div class="loc-card">
+              <div class="loc-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="loc-card-text">
+                <h4>Our Office</h4>
+                <p>Firozpur Cantt,<br>Punjab, India</p>
+              </div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="loc-card-text">
+                <h4>Call Us</h4>
+                <p>+91 83605 86043</p>
+              </div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="loc-card-text">
+                <h4>Email Us</h4>
+                <p>hello@ankitwebstudio.com</p>
+              </div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="loc-card-text">
+                <h4>Working Hours</h4>
+                <p>Mon - Sat: 10:00 AM - 7:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="locate-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54767.97257193576!2d74.57470505595008!3d30.914672060058198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919e8380e26bf27%3A0xef024b3e6cf858f2!2sFerozepur%20Cantt%2C%20Punjab!5e0!3m2!1sen!2sin!4v1781975484065!5m2!1sen!2sin"  width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
 
-
-
-    </div>
-
-  </div>
-  <div class="fourthsectionouter fade-up">
-
-    <h1>Flexible WordPress Plans Designed for Every Business</h1>
-    <p>Choose the perfect WordPress plan designed to match your business goals and budget. Whether you need a simple
-      business website, a professional portfolio, or a complete custom solution, our plans are focused on performance,
-      modern design, responsiveness, and long-term growth. We provide reliable support and high-quality development to
-      help your brand build a strong online presence.</p>
-  </div>
-
-  <div class="pricing  "> 
-
-    <div class="pricingbox1 fade-up">
-      <div class="namesofpackbox">
-        <p>Essential Plan</p>
-      </div>
-      <img src="Assets/undraw_coming-home_jmbc.svg" alt="" class="pricingbox1img">
-
-      <h4 class="planprice">₹ 15,000</h4>
-      <h4 class="realprice">₹ 10,000</h4>
-      <span>Features Included</span>
-      <ul class="pricingbox1list">
-        <li>WordPress + WooCommerce setup</li>
-        <li>Ready-made premium theme install</li>
-        <li> 1–5 pages (Home, Shop, About, Contact, Policy)</li>
-        <li>Up to 30–50 products upload</li>
-        <li>Basic payment gateway (Razorpay / Paytm)</li>
-        <li>Mobile responsive design</li>
-        <li>Basic SEO setup (meta tags, sitemap)</li>
-        <li>WhatsApp chat button</li>
-        <li>No advance customization </li>
-
-      </ul>
-
-      <button class="call-btn" onclick="window.location.href='tel:+918360586043'">Call Now</button>
-    </div>
-    <div class="pricingbox1 fade-up">
-      <div class="namesofpackbox">
-        <p>Professional</p>
-      </div>
-      <img src="Assets/undraw_mobile-development_tjxm.svg" alt="" class="pricingbox1img">
-      <h4 class="planprice">₹ 30,000</h4>
-      <h4 class="realpric">₹ 15,000</h4>
-
-      <span>Features Included</span>
-
-      <ul class="pricingbox1list">
-        <li>Custom homepage layout (Elementor)</li>
-        <li>Up to 150 products upload</li>
-        <li>Product filters (price, category)</li>
-        <li>Coupon / discount system setup</li>
-        <li>Email notification setup (order alerts)</li>
-        <li>Speed optimization (basic caching)</li>
-        <li>Basic branding (logo placement, colors match)</li>
-        <li>Instagram / social media integration</li>
-        <li>Abandoned cart plugin setup</li>
-      </ul>
-      <button class="call-btn" onclick="window.location.href='tel:+918360586043'">Call Now</button>
-    </div>
-
-
-
-    <div class="pricingbox3 fade-up">
-      <div class="namesofpackbox3">
-        <p>Elite Plan</p>
-      </div>
-      <img src="Assets/undraw_maker-launch_fwzi.svg" alt="" class="pricingbox1img">
-      <h4 class="planprice">₹ 60,999</h4>
-      <h4 class="realprice3">₹ 20,999+</h4>
-      <span>Features Included</span>
-
-
-      <ul class="pricingbox1list">
-        <li>Full custom UI design (Elementor Pro)</li>
-        <li>Unlimited products setup (or 300+ initial upload)</li>
-        <li>Advanced filtering + search system</li>
-        <li>Multi-payment gateway setup</li>
-        <li>WhatsApp automation (order + inquiry)</li>
-        <li>Live chat integration</li>
-        <li>Advanced SEO setup (schema, product SEO)</li>
-        <li>Speed optimization
-        <li>Basic conversion setup (upsell / related products)</li>
-       
+      <div class="locate-bottom-banner">
         
-      </ul>
-      <button class="call-btn" onclick="window.location.href='tel:+918360586043'">Call Now</button>
-    </div>
-
-  </div>
-
-
-
-  <div class="why-choose-us fade-up">
-
-    <h1>Why Choose AnkitWebStudio</h1>
-    <p>We create modern WordPress websites focused on perfwormance, user experience, and business growth. At
-      AnkitWebStudio, every project is built with clean design, responsive layouts, fast loading speed, and attention to
-      detail to help your brand stand out online. Our goal is to deliver reliable, high-quality web solutions that build
-      trust and drive real results for your business..</p>
-  </div>
-
-
-  <div class="whyouter fade-right">
-
-    <div class="whyinner">
-
-      <div class="whyinnerbox">
-        <div class="icons">
-          <img src="Assets/mobileframe10.svg" style="width:50px;height:50px;">
+          
         </div>
-        <h3 class="whyheading">Modern WordPress Design</h3>
-
-        <p class="whypragraph">
-          We create clean, modern, and responsive WordPress websites designed
-          to improve your online presence and attract more customers.
-        </p>
+        
       </div>
+    </section>
+  </main>
 
-      <div class="whyinnerbox">
-        <div class="icons">
-          <img src="Assets/truck-fast-solid-full.svg" style="width:50px;height:50px;">
-        </div>
-        <h3 class="whyheading">Fast Performance</h3>
-
-        <p class="whypragraph">
-          Our websites are optimized for speed and smooth performance to provide
-          a better user experience across all devices and browsers.
-        </p>
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="Assets/final3 1.png" alt="AnkitWebStudio">
+        <p class="footer-desc">We build premium, high-converting websites for businesses that want to stand out and scale online.</p>
       </div>
-
-      <div class="whyinnerbox">
-        <div class="icons">
-          <img src="Assets/mobileframe11.svg" style="width:40px;height:40px;">
-        </div>
-        <h3 class="whyheading">Reliable Support</h3>
-
-        <p class="whypragraph">
-          We provide ongoing support, maintenance, and guidance to keep your
-          WordPress website secure, updated, and running smoothly.
-        </p>
-      </div>
-    </div>
-
-    <div class="whyinner1">
-      <div class="whyinnerbox">
-        <div class="icons">
-          <img src="Assets/mobileframe12.svg" style="width:50px;height:50px;">
-        </div>
-        <h3 class="whyheading">SEO Friendly Structure</h3>
-
-        <p class="whypragraph">
-          Our websites are built using SEO-friendly practices that help improve
-          visibility, rankings, and overall online reach for your business.
-        </p>
-      </div>
-
-      <div class="whyinnerbox">
-        <div class="icons">
-          <img src="Assets/mobileframe13.svg" style="width:50px;height:50px;">
-        </div>
-        <h3 class="whyheading">Professional UI/UX</h3>
-
-        <p class="whypragraph">
-          We focus on creating visually appealing and user-friendly interfaces
-          that deliver a smooth and engaging browsing experience.
-        </p>
-      </div>
-
-      <div class="whyinnerbox">
-        <div class="icons">
-          <img src="Assets/mobileframe14.svg" style="width:40px;height:40px;">
-        </div>
-        <h3 class="whyheading">Business Growth Focused</h3>
-
-        <p class="whypragraph">
-          Every website is built with modern layouts, conversion-focused sections,
-          and strategies that help businesses grow online effectively
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section class="contact-section" id="contact">
-
-    <div class="contact-box fade-up">
-
-      <h1>Submit Your Query</h1>
-      <p>We will be glad to help you</p>
-
-      <form action="https://formspree.io/f/mzdwwrpe" method="POST">
-
-  <div class="input-row">
-    <input type="text" name="name" placeholder="Your Name" required>
-
-    <input type="email" name="email" placeholder="Your E-mail" required>
-  </div>
-
-  <div class="input-row">
-    <input type="text" name="phone" placeholder="Phone" required>
-
-    <input type="text" name="subject" placeholder="Subject" required>
-  </div>
-
-  <textarea name="message" placeholder="Message" required></textarea>
-
-  <button type="submit">SEND YOUR MESSAGE</button>
-
-</form>
-
-      <div class="contact-info">
-        <span>📞 +91 8360586043</span>
-        <span>|</span>
-        <span>✉️ ankitwebsolution08@gmail.com</span>
-      </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </section>
-
-
-
-  <!--<div class="wave-box1">
-
-    <-- Bottom wave now on top 
-    <svg class="wave0 wave4" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="rgba(255,255,255,0.2)"
-        d="M0,160L80,150C160,140,320,120,480,90C640,60,800,40,960,70C1120,100,1280,180,1440,160L1440,0L0,0Z">
-      </path>
-    </svg>
-
-     Top wave now below 
-    <svg class="wave0 wave3" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="rgba(255,255,255,0.35)"
-        d="M0,96L60,122C120,148,240,202,360,202C480,202,600,148,720,122C840,96,960,96,1080,122C1200,148,1320,202,1440,192L1440,0L0,0Z">
-      </path>
-    </svg>
-
-  </div>
-
--->
-  <div class="weve123">
-
-
-    <img src="Assets/wew.svg" alt="" style="width: 100%;">
-
-
-  </div>
-
-  <footer class="footer">
-
-
-
-    <div class="footer-container">
-
-
-      <div class="footer-about">
-
-        <img src="Assets/final3.svg" alt="" class="footerlogo">
-
-        <p class="footer-text">
-          AnkitWebStudio creates modern websites,
-          e-commerce stores, landing pages and
-          professional UI designs for businesses.
-        </p>
-
-        <h4 class="footer-copy">
-          © 2026 AnkitWebStudio. All Rights Reserved.
-        </h4>
-
-      </div>
-
-
-      <div class="footer-links">
-        <h2 class="footer-heading">
-
-        </h2>
-
-        <a href="#Home">Home</a>
-        <a href="#services">Services</a>
       
-        <a href="#contact">Contact</a>
-
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
 
-
-      <div class="footer-links">
-
-        <h2 class="footer-heading">
-          Services
-        </h2>
-
-        <a href="#services">Website Design</a>
-        <a href="#">UI/UX Design</a>
-        <a href="#">E-Commerce</a>
-        <a href="#">Landing Pages</a>
-
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/918360586043" target="_blank" rel="noopener noreferrer">WhatsApp Me</a></li>
+          <li><a href="mailto:hello@ankitwebstudio.com">hello@ankitwebstudio.com</a></li>
+          <li><a href="contact.html">Locate Us</a></li>
+        </ul>
       </div>
-
-
-      <div class="footer-subscribe">
-
-        <h2 class="footer-heading">
-          Subscribe
-        </h2>
-
-        <div class="subscribe-box">
-
-          <input type="email" placeholder="Email">
-
-          <button>SEND</button>
-
-        </div>
-
-      </div>
-
     </div>
 
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2026 AnkitWebStudio. All rights reserved.
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
   </footer>
 
+  <div class="mobile-sticky-cta" aria-label="Quick actions">
+    <a class="primary-btn" href="services.html#pricing">
+      <span>Get started</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 12h12"></path>
+        <path d="m13 6 6 6-6 6"></path>
+      </svg>
+    </a>
+    <a class="secondary-btn call-btn" href="#book">
+      <span>Book a Call</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.7 19.7 0 0 1-8.59-3.06 19.4 19.4 0 0 1-6-6A19.7 19.7 0 0 1 2.18 4.18 2 2 0 0 1 4.16 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.65 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.3 1.84.52 2.8.65A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+    </a>
+  </div>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a
+    id="whatsapp-fab"
+    class="wa-fab"
+    href="https://wa.me/918360586043?text=Hi%20Ankit!%20I%20found%20your%20website%20and%20I'm%20interested%20in%20getting%20a%20website%20built."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Ankit on WhatsApp"
+  >
+    <svg class="wa-fab__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-fab__label">Chat with Ankit</span>
+    <span class="wa-fab__ping" aria-hidden="true"></span>
+  </a>
 
   <script src="script.js"></script>
-
- 
-
 </body>
-
 </html>

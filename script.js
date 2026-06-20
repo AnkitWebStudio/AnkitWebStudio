@@ -1,48 +1,78 @@
-function toggleMenu(){
-    document.getElementById("sidebar").classList.toggle("active");
+/* ---- Slider ---- */
+const dots      = document.querySelectorAll(".dot");
+const slideImage = document.querySelector(".slide-image");
 
-
-document.getElementById("overlay1")
-    .classList.toggle("active");
-
-
-
-}
-
-
-function backsidebar(){
-
-
-document.getElementById("sidebar").classList.remove("active");
-document.getElementById("overlay1").classList.remove("active");
-
-
-
-}
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
-
-window.onload = function () {
-  window.scrollTo(0, 0);
-}
-
-
-
-
-
-
-
-const elements = document.querySelectorAll('.fade-up, .fade-right');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    dots.forEach((item) => item.classList.remove("is-active"));
+    dot.classList.add("is-active");
+    slideImage.classList.add("is-changing");
+    window.setTimeout(() => { slideImage.classList.remove("is-changing"); }, 180);
+    dots.forEach((item, dotIndex) => {
+      item.setAttribute("aria-selected", String(dotIndex === index));
+    });
   });
-}, {
-  threshold: 0.2
 });
 
-elements.forEach(el => observer.observe(el));
+/* ---- Sidebar Nav ---- */
+const header     = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".menu-toggle");
+const overlay    = document.getElementById("nav-overlay");
+const navLinks   = document.querySelectorAll(".main-nav a");
+
+function openSidebar() {
+  header.classList.add("nav-open");
+  menuToggle.setAttribute("aria-expanded", "true");
+  if (overlay) overlay.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeSidebar() {
+  header.classList.remove("nav-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  if (overlay) overlay.classList.remove("is-open");
+  document.body.style.overflow = "";
+}
+
+menuToggle?.addEventListener("click", () => {
+  header.classList.contains("nav-open") ? closeSidebar() : openSidebar();
+});
+
+// Close when clicking the overlay backdrop
+overlay?.addEventListener("click", closeSidebar);
+
+// Close when a nav link is clicked (smooth UX on mobile)
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 760) closeSidebar();
+  });
+});
+
+// Close on Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeSidebar();
+});
+
+
+/* ---- Free Website Review form ---- */
+function handleReviewSubmit(event) {
+  event.preventDefault();
+  const input = document.getElementById("review-url-input");
+  const btn   = document.getElementById("review-submit-btn");
+
+  if (!input.value.trim()) return;
+
+  const original = btn.innerHTML;
+  btn.innerHTML = `✓ Submitted! We'll be in touch`;
+  btn.style.background = "#22c55e";
+  btn.disabled = true;
+  input.disabled = true;
+
+  setTimeout(() => {
+    btn.innerHTML = original;
+    btn.style.background = "";
+    btn.disabled = false;
+    input.disabled = false;
+    input.value = "";
+  }, 4000);
+}
