@@ -504,6 +504,7 @@ h1 > span {
 
   .site-header.nav-open ~ .nav-overlay,
   .nav-overlay.is-open {
+    z-index: 1;
     background: rgba(0, 0, 0, .55);
     backdrop-filter: blur(4px);
     pointer-events: all;
