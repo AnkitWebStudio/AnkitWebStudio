@@ -67,6 +67,9 @@ const revealSelectors = [
   ".process-card",
   ".locate-content > *",
   ".locate-map",
+  ".contact-intro > *",
+  ".contact-form-card",
+  ".contact-stats",
   ".site-footer"
 ];
 
