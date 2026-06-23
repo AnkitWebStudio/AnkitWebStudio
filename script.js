@@ -1,5 +1,5 @@
 /* ---- Slider ---- */
-const dots      = document.querySelectorAll(".dot");
+const dots = document.querySelectorAll(".dot");
 const slideImage = document.querySelector(".slide-image");
 
 dots.forEach((dot, index) => {
@@ -15,10 +15,10 @@ dots.forEach((dot, index) => {
 });
 
 /* ---- Sidebar Nav ---- */
-const header     = document.querySelector(".site-header");
+const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
-const overlay    = document.getElementById("nav-overlay");
-const navLinks   = document.querySelectorAll(".main-nav a");
+const overlay = document.getElementById("nav-overlay");
+const navLinks = document.querySelectorAll(".main-nav a");
 
 function openSidebar() {
   header.classList.add("nav-open");
@@ -38,19 +38,16 @@ menuToggle?.addEventListener("click", () => {
   header.classList.contains("nav-open") ? closeSidebar() : openSidebar();
 });
 
-// Close when clicking the overlay backdrop
 overlay?.addEventListener("click", closeSidebar);
 
-// Close when a nav link is clicked (smooth UX on mobile)
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     if (window.innerWidth <= 760) closeSidebar();
   });
 });
 
-// Close on Escape key
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeSidebar();
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeSidebar();
 });
 
 /* ---- Fade-up on scroll ---- */
@@ -98,26 +95,11 @@ if ("IntersectionObserver" in window && !reduceMotion) {
   revealTargets.forEach((item) => item.classList.add("is-visible"));
 }
 
-
 /* ---- Free Website Review form ---- */
-function handleReviewSubmit(event) {
-  event.preventDefault();
-  const input = document.getElementById("review-url-input");
-  const btn   = document.getElementById("review-submit-btn");
+const reviewForm = document.getElementById("review-form");
+const reviewSubmit = document.getElementById("review-submit-btn");
 
-  if (!input.value.trim()) return;
-
-  const original = btn.innerHTML;
-  btn.innerHTML = `✓ Submitted! We'll be in touch`;
-  btn.style.background = "#22c55e";
-  btn.disabled = true;
-  input.disabled = true;
-
-  setTimeout(() => {
-    btn.innerHTML = original;
-    btn.style.background = "";
-    btn.disabled = false;
-    input.disabled = false;
-    input.value = "";
-  }, 4000);
-}
+reviewForm?.addEventListener("submit", () => {
+  reviewSubmit.innerHTML = "<span>Submitting...</span>";
+  reviewSubmit.disabled = true;
+});

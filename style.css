@@ -1278,18 +1278,26 @@ h1 > span {
 .review-form { width: 100%; }
 
 .review-input-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.review-field {
   display: flex;
   align-items: center;
-  gap: 0;
-  width: 100%;
-  border-radius: 12px;
+  min-width: 0;
+  height: 56px;
   border: 1.5px solid rgba(139,92,246,.4);
+  border-radius: 12px;
   background: rgba(255,255,255,.04);
   overflow: hidden;
   transition: border-color 200ms ease, box-shadow 200ms ease;
 }
 
-.review-input-wrap:focus-within {
+.review-field:focus-within {
   border-color: var(--color-purple);
   box-shadow: 0 0 0 3px rgba(139,92,246,.18);
 }
@@ -1304,6 +1312,7 @@ h1 > span {
 
 .review-input {
   flex: 1;
+  min-width: 0;
   height: 56px;
   padding: 0 14px;
   background: transparent;
@@ -1320,8 +1329,10 @@ h1 > span {
 .review-submit-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   height: 56px;
+  border-radius: 12px;
   padding: 0 22px;
   background: var(--color-purple);
   color: #fff;
@@ -1456,7 +1467,7 @@ h1 > span {
   }
 
   .review-input-wrap {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     border-radius: 12px;
     overflow: visible;
     border: none;
@@ -1464,7 +1475,14 @@ h1 > span {
     gap: 10px;
   }
 
-  .review-input-wrap:focus-within {
+  .review-field {
+    height: auto;
+    border: 0;
+    background: transparent;
+    overflow: visible;
+  }
+
+  .review-field:focus-within {
     box-shadow: none;
     border-color: transparent;
   }

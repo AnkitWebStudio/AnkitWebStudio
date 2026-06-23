@@ -278,20 +278,41 @@
           <p class="review-card__desc">Our team will analyze and get back to you with actionable suggestions.</p>
         </div>
 
-        <form class="review-form" id="review-form" onsubmit="handleReviewSubmit(event)">
+        <form class="review-form" id="review-form" action="https://formspree.io/f/mvzjgzwg" method="POST">
+          <input type="hidden" name="_subject" value="New website review request from AnkitWebStudio">
           <div class="review-input-wrap">
-            <svg class="review-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-            </svg>
-            <input
-              id="review-url-input"
-              class="review-input"
-              type="url"
-              placeholder="https://www.yourwebsite.com"
-              aria-label="Your website URL"
-              required
-            >
+            <label class="review-field">
+              <svg class="review-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+              <input
+                id="review-url-input"
+                class="review-input"
+                type="url"
+                name="website_url"
+                placeholder="https://www.yourwebsite.com"
+                aria-label="Your website URL"
+                required
+              >
+            </label>
+            <label class="review-field">
+              <svg class="review-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                <path d="M8 10h.01"/>
+                <path d="M12 10h.01"/>
+                <path d="M16 10h.01"/>
+              </svg>
+              <input
+                id="review-whatsapp-input"
+                class="review-input"
+                type="text"
+                name="whatsapp"
+                placeholder="WhatsApp no. or chat link"
+                aria-label="Your WhatsApp number or chat link"
+                required
+              >
+            </label>
             <button class="review-submit-btn" type="submit" id="review-submit-btn">
               Submit for Review
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
