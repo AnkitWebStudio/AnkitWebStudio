@@ -53,6 +53,48 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeSidebar();
 });
 
+/* ---- Fade-up on scroll ---- */
+const revealSelectors = [
+  ".hero .slider-panel",
+  ".hero .hero-copy",
+  ".mobile-choice",
+  ".review-badge",
+  ".review-heading",
+  ".review-subheading",
+  ".review-card",
+  ".review-feature",
+  ".process-header",
+  ".process-card",
+  ".locate-content > *",
+  ".locate-map",
+  ".site-footer"
+];
+
+const revealTargets = document.querySelectorAll(revealSelectors.join(","));
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+revealTargets.forEach((item, index) => {
+  item.classList.add("reveal-on-scroll");
+  item.style.setProperty("--reveal-delay", `${(index % 4) * 70}ms`);
+});
+
+if ("IntersectionObserver" in window && !reduceMotion) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.16,
+    rootMargin: "0px 0px -8% 0px"
+  });
+
+  revealTargets.forEach((item) => revealObserver.observe(item));
+} else {
+  revealTargets.forEach((item) => item.classList.add("is-visible"));
+}
+
 
 /* ---- Free Website Review form ---- */
 function handleReviewSubmit(event) {
